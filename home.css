@@ -1,0 +1,148 @@
+#heading-book h3{
+    text-align: center;
+    text-shadow: 2px 2px 6px #000000;
+    font-size: 30px;
+    font-weight:500;
+    color:#314152;
+    margin-top:100px;
+}
+#heading-book p{
+    text-align: center;
+}
+
+/* cart image */
+.right img{
+    width:45px;
+    height:30px;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.footer-distributed{
+    margin-top:200px;
+}
+.container{
+    margin-top:100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.container .box{
+    position: relative;
+    width:350px;
+    padding:30px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    border-radius: 4px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.container .box .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.5s;
+
+
+}
+.container .box:nth-child(1) .icon{
+    box-shadow: 0 0 0 0 #2B7A78;
+    background: #2B7A78;
+}
+.container .box:nth-child(1):hover .icon{
+     box-shadow: 0 0 0 400px #2B7A78;
+    
+}
+.container .box:nth-child(2) .icon{
+    box-shadow: 0 0 0 0 #464866;
+    background: #464866;
+}
+.container .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px #464866;
+    
+}
+.container .box:nth-child(3) .icon{
+    box-shadow: 0 0 0 0 #29648A;
+    background: #29648A;
+}
+.container .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px #29648A;
+    
+}
+.container .box:nth-child(4) .icon{
+    box-shadow: 0 0 0 0 #374785;
+    background: #374785;
+}
+.container .box:nth-child(4):hover .icon{
+    box-shadow: 0 0 0 400px #374785;
+    
+}
+.container .box:nth-child(5) .icon{
+    box-shadow: 0 0 0 0 #24305E;
+    background: #24305E;
+}
+.container .box:nth-child(5):hover .icon{
+    box-shadow: 0 0 0 400px #24305E;
+    
+}
+.container .box .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+.container .box:hover .content{
+    color: #ffffff;
+}
+.container .box .content h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.container .box .content p{
+    margin: 0;
+    padding: 0;
+    font-size:13px;
+
+}
+.container .box .content .addcart{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    color:#000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2) ;
+}
+.container .box:before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    background: rgba(255, 255,255,.2);
+    z-index: 2;
+    pointer-events: none;
+}
